@@ -1,4 +1,4 @@
-/* check if a wellington investment fund can be moved from one to another */
+/* check if a wellington management funds can be moved from one portfolio to another */
 
 import java.util.ArrayList;
 import java.util.Scanner;
