@@ -35,21 +35,21 @@ public class wellmanagefundProblem {
             String start = keyboard.nextLine();
             System.out.print("Enter goal wellmanagefund: ");
             String goal = keyboard.nextLine();
-            ArrayList<String> pathForfunds = new ArrayList<String>();
+            ArrayList<String> portfolioForfunds = new ArrayList<String>();
             ArrayList<String> wellmanagefundsVisited = new ArrayList<String>();
-            if( canRedeem(start, goal, pathForfunds, wellmanagefundsVisited, wellmanagefundsPartnersNetwork))
-                System.out.println("Path to redeem funds: " + pathForfunds);
+            if( canRedeem(start, goal, portfolioForfunds, wellmanagefundsVisited, wellmanagefundsPartnersNetwork))
+                System.out.println("portfolio to redeem funds: " + portfolioForfunds);
             else
                 System.out.println("Cannot convert funds from " + start + " to " + goal + ".");
         }
     }
     
     private static boolean canRedeem(String current, String goal,
-            ArrayList<String> pathForfunds, ArrayList<String> wellmanagefundsVisited,
+            ArrayList<String> portfolioForfunds, ArrayList<String> wellmanagefundsVisited,
             ArrayList<wellmanagefund> network){
         if(current.equals(goal)){
-            //base case 1, I have found a path!
-            pathForfunds.add(current);
+            //base case 1, I have found a portfolio!
+            portfolioForfunds.add(current);
             return true;
         }
         else if(wellmanagefundsVisited.contains(current))
@@ -62,8 +62,8 @@ public class wellmanagefundProblem {
             // now I have been here
             wellmanagefundsVisited.add(current);
             
-            // add this to the path
-            pathForfunds.add(current);
+            // add this to the portfolio
+            portfolioForfunds.add(current);
             
             // find this wellmanagefund in the network
             int pos = -1;
