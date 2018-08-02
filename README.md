@@ -1,3 +1,3 @@
 # fluffy-doodle
 
-Paceholder 
+A place to store code samples...
