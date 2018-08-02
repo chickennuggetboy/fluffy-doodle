@@ -1,0 +1,10 @@
+lowerhutt.wellmanage.com      172.16.73.118
+porirua.wellmanage.com        172.16.72.121
+kapiti.wellmanage.com         172.16.32.38
+upperhutt.wellmanage.com      172.16.73.116
+masterton.wellmanage.com      172.16.52.69
+otaki.wellmanage.com          172.16.52.147
+carterton.wellmanage.com      172.16.90.138
+featherston.wellmanage.com    172.16.76.110
+greyton.wellmanage.com        172.16.35.179
+martinborough.wellmanage.com  172.16.12.167
