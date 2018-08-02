@@ -8,7 +8,7 @@ from datetime import datetime
 subprocess.call('clear', shell=True)
 
 # Ask for input
-remoteServer    = raw_input("Enter a remote host to scan: ")
+remoteServer    = raw_input("Enter a remote Wellington host to scan: ")
 remoteServerIP  = socket.gethostbyname(remoteServer)
 
 # Print a nice banner with information on which host we are about to scan
@@ -36,7 +36,7 @@ except KeyboardInterrupt:
     sys.exit()
 
 except socket.gaierror:
-    print 'Hostname could not be resolved. Exiting'
+    print 'Wellington host could not be resolved. Exiting'
     sys.exit()
 
 except socket.error:
